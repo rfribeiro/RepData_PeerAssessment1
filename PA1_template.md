@@ -60,7 +60,7 @@ sumSteps <- tapply(data$steps, data$date, sum, na.rm=TRUE)
 qplot(sumSteps, xlab='Total steps per day', ylab='Frequency', binwidth=500)
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-4-1.png)<!-- -->
+![](figure/unnamed-chunk-4-1.png)<!-- -->
 
 2. Calculate and report the mean and median total number of steps taken per day
 
@@ -99,7 +99,7 @@ ggplot(data=averages_daily, aes(x=interval, y=steps)) +
     ylab("Average number of steps")
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-8-1.png)<!-- -->
+![](figure/unnamed-chunk-8-1.png)<!-- -->
 
 2. Which 5-minute interval, on average across all the days in the dataset, contains the maximum number of steps?
 
@@ -148,7 +148,7 @@ sumSteps <- tapply(activity_not_na$steps, activity_not_na$date, sum, na.rm=TRUE)
 qplot(sumSteps, xlab='Total steps per day', ylab='Frequency', binwidth=500)
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-12-1.png)<!-- -->
+![](figure/unnamed-chunk-12-1.png)<!-- -->
 
 2. Which 5-minute interval, on average across all the days in the dataset, contains the maximum number of steps?
 
@@ -188,4 +188,4 @@ ggplot(averaged_activity_data, aes(interval, steps)) +
     ylab("avarage number of steps")
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-16-1.png)<!-- -->
+![](figure/unnamed-chunk-16-1.png)<!-- -->
